@@ -1,0 +1,32 @@
+body{
+        background-color: var(--tech-white);
+
+
+}
+main{
+    direction: rtl;
+    padding: 100px 20px;
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+
+}
+main .text{
+    width: 1000px;
+}
+main .text p{
+    font-size: 23px;
+}
+main .text h1{
+    margin-top: 20px;
+}
+main .img{
+    display: flex;
+    justify-content: center;
+}
+main .img img{
+    width: 70%;
+
+}

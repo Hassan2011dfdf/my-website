@@ -1,0 +1,50 @@
+body{
+        background-color: var(--tech-white);
+}
+main{
+    direction: rtl;
+    padding: 100px 20px;
+
+}
+main .top p{
+    font-size: 23px;
+}
+main p span{
+    color: var(--tech-dark);
+}
+main .bottom h1{
+    margin-top: 40px;
+    color: var(--tech-dark);
+}
+main .bottom p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+form{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+form textarea{
+  
+  width: 350px;      
+  height: 200px;      
+  resize: none;      
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+form button{
+      border: 1px solid var( --tech-primary);
+  background-color: var(--tech-dark);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: var(--tech-white);
+  font-size: 15px;
+  width: 200px;
+    cursor: pointer;
+}

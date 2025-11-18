@@ -1,0 +1,11 @@
+.phonesSec{
+  padding-top: 100px;
+}
+
+.phone img {
+width: 40%;
+height: 40%;
+margin-bottom: 1rem;
+  transition: 0.5s ; 
+
+}

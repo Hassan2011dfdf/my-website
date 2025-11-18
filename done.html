@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Dragon Store</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+:root {
+  --tech-dark: #5f00b8;
+  --tech-primary: #06aef0;
+  --tech-light: #90E0EF;
+  --tech-white: #FFFFFF;
+  --tech-bg: #ececec; 
+  --tech-black: #000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+      font-family: "Tajawal", sans-serif; 
+}
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 50px;
+    padding: 20px;
+}
+i{
+    font-size: 45px;
+    color: green;
+}
+button{
+  border: 1px solid var( --tech-primary);
+  background-color: var(--tech-dark);
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: var(--tech-white);
+  font-size: 20px;
+  cursor: pointer;
+}
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    #counter {
+      font-size: 60px;
+      color: #333;
+      margin: 20px 0;
+    }
+    </style>
+</head>
+<body>
+
+ <div><h1>DONE <i class="fa-solid fa-check"></i></h1></div>
+<form action="DragonMain.html">
+    <button>رجوع</button>
+</form>
+<h1>سيتم تحويلك خلال:</h1>
+<div id="counter">5</div>
+<p>الانتظار قليلاً...</p>
+ <script>
+    let count = 5;
+  const counter = document.getElementById("counter");
+  const targetURL = "DragonMain.html"; 
+
+  const interval = setInterval(() => {
+    count--;
+    counter.textContent = count; 
+    if(count === 0){
+      clearInterval(interval); 
+      window.location.href = targetURL; 
+    }
+  }, 1000); 
+ </script>
+</body>
+</html>

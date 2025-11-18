@@ -1,0 +1,30 @@
+main{
+    padding: 100px 0 ;
+}
+main img{
+    width: 20%;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form input{
+        border: 1px solid var(--tech-dark);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 250px;
+    margin: 5px 0;
+    text-align: center;
+}
+form button{
+      border: 1px solid var( --tech-primary);
+  background-color: var(--tech-dark);
+  padding: 10px 60px;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: var(--tech-white);
+  font-size: 20px;
+    cursor: pointer;
+}

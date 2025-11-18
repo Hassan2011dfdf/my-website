@@ -1,0 +1,104 @@
+  .main{
+  width: 100%;
+  padding-top: 130px;
+  display: flex;
+  background: var(--tech-bg);
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  padding: 0 50px;
+}
+
+.main .text .top{
+   color: var(--tech-dark);
+   font-size: 30px;
+   font-weight: 900;
+}
+.main .text .center{
+  color: var(--tech-black);
+   font-size: 40px;
+   font-weight: 900;
+   margin: 20px 0;
+}
+.main .text .bottom{
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.main .text .bottom span{
+  color: var(--tech-dark);
+}
+.main .text a{
+  background-color: var(--tech-dark);
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--tech-white);
+  text-decoration: none;
+} 
+.main .text a:hover{
+  background: #8a1fee;
+}
+.best{
+  direction: rtl;
+    background: var(--tech-bg); 
+}
+.best h2,
+.phonesSec h2{
+  color: var(--tech-dark);
+  direction: rtl;
+  font-size: 30px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+.boxs {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;       
+  flex-wrap: wrap;    
+  padding: 30px;           
+  gap: 40px;
+}
+
+.boxs  div{
+  background-color: var(--tech-white); 
+  padding: 30px 20px;
+  padding-bottom: 200px;
+  border-radius: 10px;
+  flex: 1;              
+  min-width: 200px; 
+  max-height: 220px;   
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.best .boxs div i{
+ color: var(--tech-dark);
+ margin-bottom: 20px;
+ font-size: 40px;
+}
+.best .boxs div h3{
+  color: var(--tech-black);
+  font-size: 30px;
+}
+.best .boxs div p{
+  margin-top: 10px;
+  
+}
+.boxs  div:hover{
+  border: var(--tech-dark) solid 2px;
+}
+
+@media (max-width: 975px) {
+    main{
+    flex-direction: column;
+      padding-top: 80px;
+  }
+  .best h2,
+.phonesSec h2{
+  color: var(--tech-dark);
+  margin-right: 0px;
+
+}
+}
+
+
